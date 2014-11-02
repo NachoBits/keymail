@@ -1,33 +1,32 @@
-#sidebar-wrapper{
-    left: center;
-    width: 150px;
-    background: #666666;
-    position: fixed;
-    height: 85%;
-    }
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 150px;
+#sidebar-nav {
     margin: 0;
     padding: 0;
-    list-style: none
+
+    ul {
+        display: block;
+    }
+
+    li {
+        text-indent: 10px;
+        line-height: 35px;
+        list-style-type: none;
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255,255,255,0.8);
+            }
+        }
+    }
 }
 
-.sidebar-nav li {
-    text-indent: 10px;
-    line-height: 35px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #33cc33;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+.vertical-center{
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
+  min-width: 150px;
 }
