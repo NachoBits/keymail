@@ -1,1 +1,1 @@
-.subject{padding-left:20px;padding-top:15px}.main{text-align:left;background-color:#eee;min-height:80%;min-height:80vh}.msgs{list-style-type:none}.main li a{color:black}
+.message{border:dashed}.sender{padding-left:30px;padding-top:15px}.main{text-align:left;background-color:#eee;min-height:80%;min-height:80vh}.msgs{list-style-type:none}.main li{display:inline}.main li a{color:black}
