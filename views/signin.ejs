@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/signin.css">
   </head>
-<body>
+  <body>
 
     <!-- Sign-In Page  -->
     <div class="container-fluid">
+
+      <!-- Welcome Message -->
+      <p><h1 id="welcome">Welcome to KeyMail!</h1></p>
       <!-- Grey Sign In Box   -->
       <div class="jumbotron vertical-center" align="center">   
         <form class="form-signin" role="form" method="post">        
@@ -17,14 +21,14 @@
 
           <!-- Envelope Icon -->
           <img src="/images/keyMailLogo.png" class="img-thumbnail" alt="Key Mail Logo">          
-          
+
           <!-- Input Boxes for Email and Password -->
           <input type="email" class="form-control" placeholder="Email address" id="email" required="" autofocus="">
           <input type="password" class="form-control" placeholder="Password" id="password" required="">
-     
+
           <!--<button type="submit" class="btn btn-default">Sigh in</button>-->
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          
+
         </form>
       </div> 
     </div>
