@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var signin = require('./routes/signin');
 var about = require('./routes/about');
+var splash = require('./routes/splash');
 var app = express();
 
 // view engine setup
@@ -28,6 +29,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/signin', signin);
 app.use('/about', about);
+app.use('/splash', splash);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
