@@ -8,7 +8,7 @@ $("form").submit(function (e) {
       <span class="sr-only">45% Complete</span> \
       </div> \
       </div> \
-      <h2 style="text-align:center;">Creating session key...</h2>');
+      <h2 style="text-align:center;">Generating session key and authenticating...</h2>');
   triplesec.encrypt ({
     data:          new triplesec.Buffer(pass),
     key:           new triplesec.Buffer(key.toString()),
@@ -19,7 +19,9 @@ $("form").submit(function (e) {
       $.post(window.location.href, {password: pass, session: key.toString(),
         email: document.getElementById("email").value},
         function (response) {
-          window.location = response;
+          document.cookie="session=" + key;
+          document.cookie="key=" + response.key;
+          window.location = response.redirect;
         });
     } else {
       alert(err);
