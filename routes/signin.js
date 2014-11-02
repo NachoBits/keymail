@@ -25,7 +25,7 @@ router.post('/', function(req, res) {
                 progress_hook: function(obj) { /* ... */}
               }, function (err, buff) {
                 if (! err) {
-                  res.send({redirect: req.protocol + "://" + req.get('Host'),
+                  res.send({redirect: "https://" + req.get('Host'),
                       key: buff.toString('hex')});
                 }})} else {
                   res.send({redirect: "", status: 'fail'})
