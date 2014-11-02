@@ -5,7 +5,6 @@ $("form").submit(function (e) {
   var key = CryptoJS.PBKDF2(pass , salt, { keySize: 512/32 });
   $("body").append('<div class="progress"> \
       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> \
-      <span class="sr-only">45% Complete</span> \
       </div> \
       </div> \
       <h2 style="text-align:center;">Generating session key and authenticating...</h2>');
