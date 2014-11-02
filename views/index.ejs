@@ -17,7 +17,102 @@
     	</div>
 
     </main>
-
   </body>
+<script src="/javascripts/kbpgp-1.0.0-min.js"></script>
+<script src="/javascripts/triplesec.js"></script>
+<script>
+  function getCookie(name) {
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  }
+   
+  var session = getCookie('session');
+  var key = getCookie('key');
+  var pass = getCookie('passphrase');
+  var dec = new triplesec.Decryptor(key);
+/*  triplesec.decrypt({
+      data: new triplesec.Buffer(pass, 'hex'),
+      key: new triplesec.Buffer(session),
+      progress_hook: function (obj) { /* ... */ }}, decryptPassphrase);
+*/
+  
+  dec.run(new 
+  function decryptPassphrase(err, buff) {
+    if (! err) {
+      decryptKey(buff.toString());
+  } else {
+    alert(err);
+  }}
 
+  function decryptKey(passphrase) {
+    triplesec.decrypt({
+      data: new triplesec.Buffer(getCookie('key'), 'hex'),
+      key: new triplesec.Buffer(getCookie('session')),
+      progress_hook: function (obj) { console.log(obj)}}, function(err, buffer) {
+      if (! err) {  
+        alert(new triplesec.Buffer(getCookie('key'), 'hex')); 
+        var alice_pgp_key    = buffer.toString();
+        alert(alice_pgp_key);
+        kbpgp.KeyManager.import_from_armored_pgp({
+          armored: alice_pgp_key
+        }, function(err, alice) {
+          if (!err) {
+            if (alice.is_pgp_locked()) {
+              alice.unlock_pgp({
+                passphrase: passphrase 
+              }, function(err) {
+                if (!err) {
+                  console.log("Loaded private key with passphrase");
+                }
+              });
+            } else {
+              console.log("Loaded private key w/o passphrase");
+            }
+          } else{
+            alert(err);
+          }
+        });
+
+        } else {
+          alert(err);
+        }});
+    }
+
+
+  function add_to_gpg(err, buff) {
+    alert(passphrase);
+    alert("starting to add");
+    if (! err) {
+      
+      var alice_pgp_key    = buff.toString();
+      var alice_passphrase = "martian-dung-flinger";
+
+      kbpgp.KeyManager.import_from_armored_pgp({
+        armored: alice_pgp_key
+      }, function(err, alice) {
+        if (!err) {
+          alert("hello again");
+          if (alice.is_pgp_locked()) {
+            alice.unlock_pgp({
+              passphrase: alice_passphrase
+            }, function(err) {
+              if (!err) {
+                console.log("Loaded private key with passphrase");
+              }
+            });
+          } else {
+            alert("ERROR");
+            console.log("Loaded private key w/o passphrase");
+          }
+        } else {
+          alert(err);
+        }
+      });
+    } else {
+      alert(err);
+    }
+  }
+
+</script>
 </html>
