@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/signin.css">
   </head>
-
   <body>
 
     <!-- Sign-In Page  -->
@@ -13,7 +12,6 @@
 
       <!-- Welcome Message -->
       <p><h1 id="welcome">Welcome to KeyMail!</h1></p>
-
       <!-- Grey Sign In Box   -->
       <div class="jumbotron vertical-center" align="center">   
         <form class="form-signin" role="form" method="post">        
@@ -23,14 +21,14 @@
 
           <!-- Envelope Icon -->
           <img src="/images/keyMailLogo.png" class="img-thumbnail" alt="Key Mail Logo">          
-          
+
           <!-- Input Boxes for Email and Password -->
-          <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-          <input type="password" class="form-control" placeholder="Password" required="">
-     
+          <input type="email" class="form-control" placeholder="Email address" id="email" required="" autofocus="">
+          <input type="password" class="form-control" placeholder="Password" id="password" required="">
+
           <!--<button type="submit" class="btn btn-default">Sigh in</button>-->
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          
+
         </form>
       </div> 
     </div>
@@ -44,7 +42,10 @@
 
     <!-- Must include for jquery and bootstrap, in this order -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/javascripts/triplesec.js"></script>
+    <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+    <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/pbkdf2.js"></script>
+    <script src="/javascripts/session.js"></script>
   </body>
 </html>
