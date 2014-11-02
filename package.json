@@ -1,0 +1,27 @@
+{
+  "name": "keymail",
+  "version": "0.1.0",
+  "description": "Encrypted email client with Keybase integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NachoBits/keymail.git"
+  },
+  "keywords": [
+    "email",
+    "encryption",
+    "gpg",
+    "pgp",
+    "keybase"
+  ],
+  "contributors": [
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NachoBits/keymail/issues"
+  },
+  "homepage": "https://github.com/NachoBits/keymail"
+}
