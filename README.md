@@ -1,16 +1,27 @@
-Keymail
-=======
+# [Start Bootstrap](http://startbootstrap.com/) - [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
 
-Welcome to Keymail! Keymail is a secure email client that takes the hassle of cryptography out of the equation. Emails are automatically encrypted and decrypted based on the informatiion in your contacts. Keymail integrates with Keybase.io to make keeping track of your keys easy and finding your friends keys even easier.
+[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-##Can I use it?##
-Keymail is designed to be used by anyone, so as long as you have an account with [keybase.io](https://keybase.io) Keymail is for you.
+## Getting Started
 
-##How do I know it's secure?##
-Read the source! Nothing is secure without review, so don't take our word for it, take a look for yourself. If you find a vulnerability or security flaw submit an issue or even better, submit a pull request and we'll try to get it included.
+To use this template, choose one of the following options to get started:
+* Download the latest release on Start Bootstrap
+* Fork this repository on GitHub
+* Install via bower using `bower install startbootstrap-sb-admin-2`
 
-Even better, no plaintext is ever stored on our servers. All decryption happens in your browser when you're ready to read your emails. We couldn't read your emails even if we tried.
+## Bugs and Issues
 
-##Our secure key exchange##
-![Key Exchange](/docs/keyexchange.png)
-Format: ![Alt Text](url)
+Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
+
+## Creator
+
+Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.

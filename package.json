@@ -1,42 +1,14 @@
 {
-  "name": "keymail",
+  "name": "Keymail",
+  "description": "Simple file explorer.",
   "version": "0.1.0",
-  "private": true,
-  "description": "Encrypted email client with Keybase integration.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 660,
+    "height": 500
   },
   "dependencies": {
-    "body-parser": "~1.8.1",
-    "cookie-parser": "~1.3.3",
-    "debug": "~2.0.0",
-    "ejs": "~0.8.5",
-    "express": "~4.9.0",
-    "less-middleware": "1.0.x",
-    "morgan": "~1.3.0",
-    "serve-favicon": "~2.1.3",
-    "triplesec": "^3.0.19",
-    "pg": "^3.6.2",
-    "sequelize": "^2.0.0-rc2",
-    "serve-favicon": "~2.1.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NachoBits/keymail.git"
-  },
-  "keywords": [
-    "email",
-    "encryption",
-    "gpg",
-    "pgp",
-    "keybase"
-  ],
-  "contributors": [],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NachoBits/keymail/issues"
-  },
-  "homepage": "https://github.com/NachoBits/keymail"
+    "fs": "0.0.2"
+  }
 }
