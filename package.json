@@ -1,8 +1,8 @@
 {
   "name": "Keymail",
-  "description": "Simple file explorer.",
+  "description": "Email client with seamless GPG encryption.",
   "version": "0.1.0",
-  "main": "index.html",
+  "main": "pages/index.html",
   "window": {
     "toolbar": true,
     "width": 660,

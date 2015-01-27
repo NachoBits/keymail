@@ -1,16 +1,16 @@
 {
-  "name": "startbootstrap-sb-admin-2",
-  "version": "1.0.4",
-  "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2/",
+  "name": "KeyMail",
+  "description": "Email client with seamless GPG encryption.",
+  "version": "0.1.0",
+  "homepage": "https://keymail.io",
   "authors": [
-    "David Miller"
+    "Aaron Griffin"
   ],
-  "description": "A free, open source, Bootstrap admin theme created by Start Bootstrap",
   "keywords": [
     "bootstrap",
-    "theme"
+    "gpg"
   ],
-  "license": "Apache",
+  "license": "ISC",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,12 +18,11 @@
     "test",
     "tests",
     "pages",
-    "index.html",
     "/js"
   ],
   "main": [
-    "dist/css/sb-admin-2.css",
-    "dist/js/sb-admin-2.js"
+    "dist/css/keymail.css",
+    "dist/js/keymail.js"
   ],
   "dependencies": {
     "bootstrap": "~3.3.1",
