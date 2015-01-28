@@ -23,7 +23,7 @@
 
 body { 
 	background: #ffffff; 
-	margin: 0; 
+	margin: 0;
 	height: 100%; 
 	color: {{ site.colors.secondary }};
 	font-family: 'Lato', sans-serif;
@@ -472,4 +472,13 @@ a.anchor{
     position: relative; 
     top: -80px; 
     visibility: hidden;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px;
 }
