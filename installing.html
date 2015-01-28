@@ -6,7 +6,8 @@ permalink: /installing/
 
 <div id="main" class="container mtb">
     <div class="row">
-      {% markdown /documentation/install.md %}
+      {% capture my_include %}{% include /documentation/install.md %}{% endcapture %}
+      {{ my_include | markdownify }}
     </div><! --/row -->
 </div><! --/container -->
 
