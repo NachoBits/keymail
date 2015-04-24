@@ -1,0 +1,30 @@
+{
+  "name": "KeyMail",
+  "main": "index.js",
+  "version": "0.0.1",
+  "authors": [
+    "Aaron Griffin <aig787@gmail.com>"
+  ],
+  "description": "GPG Encrypted email client",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "email",
+    "gpg"
+  ],
+  "license": "ISC",
+  "homepage": "https://keymail.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "react": "~0.13.2"
+  }
+}
