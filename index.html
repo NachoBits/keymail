@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Hello React</title>
+    <link rel="stylesheet" href="index.css">
     <script src="bower_components/react/react.js"></script>
     <script src="bower_components/react/JSXTransformer.js"></script>
     <script>
@@ -10,7 +11,13 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <div id="content"></div>
-    <script type="text/jsx" src="static/js/_partials/tutorial.js"></script>
+    <div id="nav"></div>
+    <script type="text/jsx" src="js/react/nav.js"></script>
+    <script type="text/jsx">
+      React.render(
+        <Navbar />,
+        document.getElementById('nav')
+      );
+    </script>
   </body>
 </head>

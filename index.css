@@ -22,3 +22,11 @@ header h1 {
 	margin: 0;
 	padding: 0;
 }
+
+.img-brand {
+  width: 55px;
+  height: auto;
+  float: left;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
