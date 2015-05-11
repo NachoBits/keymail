@@ -1,3 +1,5 @@
+This repository has moved! It can be found here: https://github.com/aig787/keymail
+
 # keymail
 
 > My fabulous app
